@@ -11,7 +11,7 @@ export default function Navigation() {
   const pathname = window.location.pathname;
 
   return (
-    <nav className="w-full md:pl-14 md:w-[50%] flex justify-between">
+    <nav className="w-[90%] md:pl-14 md:w-[70%] flex justify-between">
       {navigates.map((navigate) => [
         <Link
           key={navigate.title}
