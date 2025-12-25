@@ -7,9 +7,11 @@ export default function Connect() {
   ];
 
   return (
-    <div className="w-screen h-screen my-5 mr-16  flex justify-center items-center flex-col">
-      <h5>Stay up to date and never miss out</h5>
-      <form className="w-160 my-14 relative flex items-center">
+    <div className="w-screen h-screen my-5 p-4 md:pr-16  flex justify-center items-center flex-col">
+      <h2 className="text-2xl leading-12 md:leading-24  sm:text-3xl my-6  md:text-[4rem] text-center">
+        Stay up to date and never miss out
+      </h2>
+      <form className="w-full md:w-160 my-14 relative flex items-center">
         <input
           type="email"
           className="border w-full p-4 rounded-lg text-2xl"
@@ -20,8 +22,8 @@ export default function Connect() {
           Subscribe
         </button>
       </form>
-      <div className="flex items-center">
-        <>
+      <div className="md:flex w-full justify-center items-center">
+        <div className="flex justify-center">
           {communities.map(({ username }, index) => (
             <div
               key={index}
@@ -29,8 +31,8 @@ export default function Connect() {
               className="w-20 border-2 border-white h-20 bg-amber-500 rounded-full -ml-4"
             ></div>
           ))}
-        </>
-        <h4 className="ml-10 text-3xl font-extrabold">
+        </div>
+        <h4 className="ml-10 my-8 text-3xl font-extrabold">
           Join the Communities 🤝
         </h4>
       </div>
