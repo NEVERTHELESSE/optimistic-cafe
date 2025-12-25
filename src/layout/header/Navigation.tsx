@@ -8,13 +8,15 @@ const navigates = [
 ];
 
 export default function Navigation() {
+  const pathname = window.location.pathname;
+
   return (
-    <nav className="pl-14 w-[50%] flex justify-around">
+    <nav className="w-full md:pl-14 md:w-[50%] flex justify-between">
       {navigates.map((navigate) => [
         <Link
           key={navigate.title}
-          className={` py-3 font-bold ml-3 rounded-xl hover:bg-gray-300 hover:text-black duration-700 px-10
-            ${navigate.path == "/" && "bg-primary-50 text-white"}
+          className={`px-2 py-1 lg:py-2 font-bold sm:ml-2 lg:ml-3 rounded-full sm:rounded-lg lg:rounded-xl hover:bg-gray-300 hover:text-black duration-700 lg:px-5
+            ${navigate.path == pathname && "bg-primary-50 text-white"}
              `}
           to={navigate.path}
         >

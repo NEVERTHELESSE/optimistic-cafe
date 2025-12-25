@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  padding: 4rem;
+  /* padding: 4rem; */
   transition-duration: 0.5s;
   background-color: var(--bgColor);
   color: var(--fgColor);
@@ -58,4 +58,9 @@ h5 {
   font-size: 3rem;
   font-family: "Fira Code";
   font-weight: bolder;
+}
+
+h2 {
+  font-family: "Fira Code";
+  font-weight: 1000;
 }

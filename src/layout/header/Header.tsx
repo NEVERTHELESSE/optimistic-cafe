@@ -4,10 +4,10 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="w-full  rounded-xl flex justify-between p-6 items-center">
-      <div className="flex  items-center">
-        <Link to="/">
-          <img src="/logo.png" className="w-10" alt="" />
+    <header className="w-full rounded-full lg:rounded-xl flex justify-between p-2  sm:p-3  lg:p-4 items-center">
+      <div className="flex items-center w-full md:w-auto">
+        <Link to="/" className="hidden md:flex">
+          <img src="/logo.png" className="w-8 lg:w-10" alt="" />
         </Link>
         <Navigation />
       </div>

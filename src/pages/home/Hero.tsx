@@ -4,25 +4,26 @@ import { heroServices } from "../../data/HeroService";
 
 export default function Hero() {
   return (
-    <section className="flex justify-between">
-      <div className="w-[50%] mr-2 overflow-hidden  bg-amber-500 shadow rounded-xl h-200 relative">
+    <section className="lg:flex justify-between">
+      <div className="w-full lg:w-[50%] sm:mr-2 overflow-hidden  bg-amber-500 shadow rounded-xl h:150 sm:h-200 relative">
         <img
           src="printer.jpg"
-          className="w-full bg-contain
-         h-full"
+          className="w-full bg-cover h-full"
           alt="printer"
         />
         <div className="absolute top-0 p-8">
           <PrimaryButton title="Printing" />
-          <h5>Sharp Colored and Black & White Printing</h5>
+          <h2 className="text-2xl leading-12 md:leading-24  sm:text-3xl my-6  md:text-[4rem]">
+            Sharp Colored and Black & White Printing
+          </h2>
           <Time minutes={2} />
         </div>
       </div>
-      <div className="w-[50%] mx-2  h-200 flex flex-wrap ">
+      <div className="my-12 lg:m-0 lg:w-[50%]  sm:h-200 flex flex-wrap ">
         {heroServices.map(({ title, url }, index) => (
           <div
             key={title}
-            className={`w-[48%]  shadow overflow-hidden ${
+            className={`w-full  sm:w-[48%]  shadow overflow-hidden ${
               index < 2 ? "mb-[1%]" : "mt-[1%]"
             } mx-[1%]  rounded-xl h-[49%] bg-blue-400`}
           >
