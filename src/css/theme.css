@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: green;
+}
+
+.dark {
+  --bgColor: #1d1d1f;
+  --fgColor: white;
+  --color-primary-50: #ffa586;
+}
+
+.light {
+  --bgColor: white;
+  --fgColor: black;
+  /* --color-primary-50: #f5d7db; */
+  --color-primary-50: green;
+}
+
+h5 {
+  color: var(--bgColor);
+}
