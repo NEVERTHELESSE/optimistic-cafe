@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Browse from "./Browse";
 import Navigation from "./Navigation";
 import Theme from "./Theme";
 
